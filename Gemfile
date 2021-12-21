@@ -1,6 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
+gem "rake"
 gem "activerecord", "~> 5.2"
 gem "sinatra-activerecord"
 gem "sqlite3"

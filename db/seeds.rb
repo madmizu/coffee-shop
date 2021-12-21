@@ -1,0 +1,36 @@
+
+c1 = Customer.create({name:'Marc'})
+c2 = Customer.create({name:'Emiley'})
+c3 = Customer.create({name:'Adam'})
+c4 = Customer.create({name:'Madi'})
+
+d1 = Coffee.create({title:'Vanilla Latte'})
+d2 = Coffee.create({title:'Caramel Macchiato'})
+d3 = Coffee.create({title:'Strawberry Frappuccino'})
+d4 = Coffee.create({title:'Hot Chocolate'})
+d5 = Coffee.create({title:'Black Coffee'})
+d6 = Coffee.create({title:'Espresso Shot'})
+d7 = Coffee.create({title:'Americano'})
+d8 = Coffee.create({title:'Caffe Mocha'})
+d9 = Coffee.create({title:'Cold Brew Coffee'})
+d10 = Coffee.create({title:'Ice Coffee with Cream'})
+d11 = Coffee.create({title:'Bottled Water'})
+
+Order.create({price: 5.00, customer_id:c1.id , coffee_id:d1.id  })
+Order.create({price: 5.25, customer_id:c1.id , coffee_id:d8.id  })
+Order.create({price: 4.00, customer_id:c1.id , coffee_id:d11.id  })
+
+Order.create({price: 5.30, customer_id:c2.id , coffee_id:d2.id  })
+Order.create({price: 2.25, customer_id:c2.id , coffee_id:d6.id  })
+Order.create({price: 4.80, customer_id:c2.id , coffee_id:d9.id  })
+Order.create({price: 3.75, customer_id:c2.id , coffee_id:d10.id  })
+
+Order.create({price: 5.00, customer_id:c3.id , coffee_id:d1.id  })
+Order.create({price: 6.10, customer_id:c3.id , coffee_id:d3.id  })
+Order.create({price: 3.10, customer_id:c3.id , coffee_id:d4.id  })
+Order.create({price: 2.80, customer_id:c3.id , coffee_id:d5.id  })
+Order.create({price: 4.10, customer_id:c3.id , coffee_id:d7.id  })
+Order.create({price: 5.25, customer_id:c3.id , coffee_id:d8.id  })
+
+Order.create({price: 5.30, customer_id:c4.id , coffee_id:d2.id  })
+Order.create({price: 2.80, customer_id:c4.id , coffee_id:d5.id  })
